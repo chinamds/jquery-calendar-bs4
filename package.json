@@ -5,7 +5,9 @@
   "main": "dist/js/jquery-calendar.min.js",
   "scripts": {
     "css-minify": "cleancss --level 2 --output dist/css/jquery-calendar.min.css src/css/jquery-calendar.css",
-    "js-minify": "uglifyjs --compress --mangle --toplevel --comments /^@/ --output dist/js/jquery-calendar.min.js src/js/jquery-calendar.js"
+    "js-minify": "uglifyjs --compress --mangle --toplevel --comments /^@/ --output dist/js/jquery-calendar.min.js src/js/jquery-calendar.js",
+    "start": "node app",
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
@@ -38,7 +40,18 @@
   },
   "devDependencies": {
     "clean-css-cli": "^4",
-    "uglify-js": "^3"
+    "uglify-js": "^3",
+    "@fortawesome/fontawesome-free": "^5.6.3",
+    "bower": "^1.8.8",
+    "express": "3.4.x",
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-qunit": "^3.1.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "phantomjs": "^2.1.7",
+    "qunit": "^2.9.1"
   },
   "files": [
     "dist/",
